@@ -7,7 +7,6 @@ git add README.md
 # UMtiliza o comando abaixo que Adiciona tudo oque tiver de novo na pasta
 git add .
 
-
 # OUY Utiliza git add e o nome ESPECIFICO do arquivo
 git add README.md
 
@@ -29,13 +28,17 @@ git status
 
 #Comando para ver as versoes do  GIT as....
 git log
+git reflog
 
 # CONFIGURAÇAO DO GIT GLOBAL NA SUA MAQUINA, PARA TER UM REGISTRO DE QUEM TÁ GRAVANDO, NÃO PRECISA SER DA CONTAO DO GITHUB
 git config --global user.email "consultorh3m@gmail.com"
 git config --global user.name "Glaucio"
 
-# COMANDO PARA JUNTAR AS branchs
-git merge
+
+# antes de fazer o MARGE... TEM QUE fazer o git pull para buscar qualquer atualizaçao que tiver sido enviado
+git pull
+# COMANDO PARA JUNTAR AS branchs é um COISA IMPORTANTE
+git merge "qual branch puxar"
 
 # CLONAR UM PROJETO QUE TÁ NO GITHUB
 git clone
@@ -45,6 +48,12 @@ git pull
 
 # MAS TEM PULL REQUEST.. que é enviar para quem tu fez o pull
 git request
+
+#INGNORANDO ARQUIVOS QUE NAO QUER SER ADICIONANDO AO CONTROLE DE versao
+touch .gitignore
+
+# voltando versao
+git reset --hard "numero da hast"
 
 # PARA FAZER O FORK.. ele repassa para o nosso..
 
