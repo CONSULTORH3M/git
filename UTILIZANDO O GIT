@@ -1,7 +1,33 @@
 # COMANDO DE VERIFICAR OS ARQUIVOS
+git init
+
+#Precisa existir uma pasta dentro da pasta ja de alguma forma, pois o git exige = ele Recomenda o ARQUIVO reame.md
+git add README.md
+
+# UMtiliza o comando abaixo que Adiciona tudo oque tiver de novo na pasta
+git add .
+
+
+# OUY Utiliza git add e o nome ESPECIFICO do arquivo
+git add README.md
+
+#Gerar a versao em si pelo Comando commit, preparar a versao para ser enviada.
+git commit -m "Primeiro Envio para o GITHUB"
+
+#MUDAR O NOME DA BRANCH... para MAIN... boas práticas indicam fazer isso, porque a BRANCH do  nosso computador é MASTER
+git branch -M main
+
+#Informar qual repositorio no GITHUB vou salvar
+git remote add origin https://github.com/CONSULTORH3M/git.git
+
+#AGORA SIM, É A HORA DE ENVIAR PARA O GITHUB na nuvem
+git push -u origin main
+
+#####################################################################################################################
+#Comando para ver como está os arquivos
 git status
 
-# VENDO VERSOES DO GIT
+#Comando para ver as versoes do  GIT as....
 git log
 
 # CONFIGURAÇAO DO GIT GLOBAL NA SUA MAQUINA, PARA TER UM REGISTRO DE QUEM TÁ GRAVANDO, NÃO PRECISA SER DA CONTAO DO GITHUB
@@ -18,40 +44,9 @@ git clone
 git pull
 
 # MAS TEM PULL REQUEST.. que é enviar para quem tu fez o pull
-git
+git request
 
 # PARA FAZER O FORK.. ele repassa para o nosso..
-
-
-SENHAS DO GITHUB 
-glauciogrando@gmail.com
-Cspkg2508@
-
-
-git init
-#Precisa existir uma pasta dentro da pasta ja de alguma forma, pois o git exige = ele Recomenda o ARQUIVO reame.md
-git add README.md
-git status
-
-# Utiliza o comando add README.md para ir para a area de STATE
-gi add README.md
-# OU utiliza o abaixo que Adiciona tudo oque tiver de novo na pasta
-git add .
-git status
-
-#Gerar a versao em si pelo Comando commit
-git commit -m "Primeiro Envio para o GITHUB"
-
-#MUDAR O NOME DA BRANCH... para MAIN... boas práticas indicam fazer isso, porque a BRANCH do  nosso computador é MASTER
-git branch -M main
-
-#Informar qual repositorio no GITHUB vou salvar
-git remote add origin https://github.com/CONSULTORH3M/git.git
-
-#AGORA SIM, É A HORA DE ENVIAR PARA O GITHUB na nuvem
-git push -u origin main
-git checkout -b main 
-
 
 
 
