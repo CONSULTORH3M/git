@@ -39,8 +39,16 @@ gi add README.md
 git add .
 git status
 
+#Gerar a versao em si pelo Comando commit
 git commit -m "Primeiro Envio para o GITHUB"
-git remote add origin https://github.com/CONSULTORH3M/teste.git
+
+#MUDAR O NOME DA BRANCH... para MAIN... boas práticas indicam fazer isso, porque a BRANCH do  nosso computador é MASTER
+git branch -M main
+
+#Informar qual repositorio no GITHUB vou salvar
+git remote add origin https://github.com/CONSULTORH3M/git.git
+
+#AGORA SIM, É A HORA DE ENVIAR PARA O GITHUB na nuvem
 git push -u origin main
 git checkout -b main 
 
